@@ -1,7 +1,18 @@
 package baseball;
 
 public class Application {
-    public static void main(String[] args) {
-        // TODO 숫자 야구 게임 구현
+    static void run() {
+        AnswerNumber answer = AnswerNumber.withCreateNumber();
+        System.out.println(answer.randomNumber);
+        boolean start = Start.gameStart();
+        while(start){
+            Character[] input = InputNumber.createInputNumber();
+            Result.comparison(answer, input);
+        }
     }
+
+    public static void main(String[] args) {
+        Application.run();
+    }
+
 }

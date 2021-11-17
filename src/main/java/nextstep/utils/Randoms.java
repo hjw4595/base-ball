@@ -14,7 +14,7 @@ public class Randoms {
      */
     private static final Random RANDOM = new Random();
 
-    private Randoms() {
+    public Randoms() {
     }
 
     /**
