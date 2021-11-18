@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 
 public class AnswerNumber {
-
     public ArrayList<Character> randomNumber;
 
     public AnswerNumber(ArrayList<Character> randomNumber) {

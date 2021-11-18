@@ -21,6 +21,7 @@ public class Result {
             System.out.printf("%d 스트라이크 %d 볼 %n", st, ba);
             if(st == 3) {
                 System.out.println("정답");
+                GameStatus.gameEnd(st);
             }
         }
     }

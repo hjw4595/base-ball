@@ -4,8 +4,9 @@ public class Application {
     static void run() {
         AnswerNumber answer = AnswerNumber.withCreateNumber();
         System.out.println(answer.randomNumber);
-        boolean start = Start.gameStart();
-        while(start){
+        GameStatus.gameStart();
+
+        while(GameStatus.status == 1){
             Character[] input = InputNumber.createInputNumber();
             Result.comparison(answer, input);
         }
